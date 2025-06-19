@@ -1,0 +1,18 @@
+# Railway deployment configuration
+version: 2
+
+build:
+  builder: dockerfile
+  dockerfilePath: Dockerfile
+
+deploy:
+  startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+  healthcheckPath: /health
+  healthcheckTimeout: 300
+  restartPolicyType: always
+
+environments:
+  production:
+    variables:
+      PYTHON_VERSION: 3.11
+      PORT: 8000
