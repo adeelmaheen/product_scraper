@@ -1,10 +1,5 @@
 # FastAPI Dockerfile for Railway
-FROM python:3.11-slim-bullseye
-
-# Ensure all system packages are up to date
-RUN apt-get update && apt-get upgrade -y && apt-get install -y \
-    gcc \
-    && rm -rf /var/lib/apt/lists/*
+FROM python:3.11-slim
 
 WORKDIR /app
 
