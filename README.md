@@ -111,5 +111,5 @@ When everything is working correctly, you should see:
 5. ✅ Charts show sentiment distribution
 6. ✅ No console errors in browser
 
-The application is now **100% functional and error-free**! 🚀
+The application is created by  **Maheen Arif**! 🚀
 \`\`\`
